@@ -16,7 +16,6 @@ const LoginForm = () => {
     // declaring loginUser with useMutation
     const [loginUser] = useMutation(LOGIN_USER);
 
-
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     setUserFormData({ ...userFormData, [name]: value });
