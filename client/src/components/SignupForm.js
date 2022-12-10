@@ -1,10 +1,10 @@
 
-
 import React, { useState } from 'react';
 import { Form, Button, Alert } from 'react-bootstrap';
 
-// import appolo hook and add user mutation
+// import appolo hook 
 import { useMutation } from "@apollo/react-hooks";
+//add user mutation
 import { ADD_USER } from "../utils/mutations";
 
 // import { createUser } from '../utils/API';
@@ -18,7 +18,7 @@ const SignupForm = () => {
   // set state for alert
   const [showAlert, setShowAlert] = useState(false);
 
-    // declared the addUser with the useMutation
+    // declare the addUser with the useMutation
     const [addUser] = useMutation(ADD_USER);
 
   const handleInputChange = (event) => {
